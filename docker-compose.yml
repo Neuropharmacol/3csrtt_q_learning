@@ -1,0 +1,21 @@
+version: "3"
+services:
+  lab:
+    image: toshiaki0910/3csrtt:v03 
+    container_name: 3csrtt_container_v03 
+    #build:
+    #    context: .
+    #    dockerfile: ./Dockerfile
+
+    ports:
+      - "8888:8888"
+
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+
+    volumes:
+      - .:/workdir
+      - ${HOST_SNIPPET_PATH:-.}:/home/jovyan/.local/share/jupyter
+
+    command: /bin/bash -c 'jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root '
+

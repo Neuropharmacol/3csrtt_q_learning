@@ -1,6 +1,5 @@
 # an intermediate file for q-learning.
 src/q_learning.h5
-data/q_learning_10Aug2021.h5
 
 # intermediate files
 *.xlsx

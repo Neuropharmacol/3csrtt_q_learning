@@ -1,4 +1,4 @@
-# Code for the preprint: "Title"
+# Code for the preprint: "Behavioral characteristics of dopamine D5 receptor knockout mice: locomotor activity, working memory, learning, and impulsivity-related behaviors."
 This reporsitory includes code for assessment of learning process in q-learning.
 
 ## Data
